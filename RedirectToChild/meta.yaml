@@ -1,6 +1,6 @@
-name: RedirectToChild
+name: Redirect To Child
 version: 1.0.0
 description: Automatically redirects to the first child
-url: https://github.com/lesaff/statamic-redirecttochild
+url: https://github.com/lesaff/statamic2-redirecttochild
 developer: Rudy Affandi
 developer_url: https://github.com/lesaff
