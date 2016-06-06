@@ -1,7 +1,7 @@
 
 # Redirect to Child
 Rudy Affandi (2015)  
-Version 1.0.0  
+Version 1.0.1
 For Statamic v2.x
 
 ## What is this?
