@@ -2,6 +2,7 @@
 
 namespace Statamic\Addons\RedirectToChild;
 
+use Statamic\API\Config;
 use Statamic\API\Content;
 use Statamic\API\URL;
 use Statamic\Exceptions\RedirectException;
@@ -26,7 +27,7 @@ class RedirectToChildTags extends Tags
         $folders_only    = true;
         $include_entries = false;
         $exclude         = '';
-        $tree            = Content::tree($from, $max_depth, null, null, $exclude);
+        $tree            = Content::tree($from, $max_depth, null, null, $exclude, Config::getShortLocale());
         $url             = !empty($tree) ? $tree[0]['page']->url() : '';
         $e               = new RedirectException;
 
