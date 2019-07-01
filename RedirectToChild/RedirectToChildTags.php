@@ -28,7 +28,7 @@ class RedirectToChildTags extends Tags
         $include_entries = false;
         $exclude         = '';
         $tree            = Content::tree($from, $max_depth, null, null, $exclude, Config::getShortLocale());
-        $url             = !empty($tree) ? $tree[0]['page']->url() : '';
+        $url             = !empty($tree) ? $tree[0]['page']->absoluteUrl() : '';
         $e               = new RedirectException;
 
         if (!empty($url)){
